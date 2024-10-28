@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="UTF-8">
+<title>Survey Form</title>
+<link rel="stylessheet" href="styles.css"/>
+  </head>
+
+  <body>
+
+<!--Visible title for user-->
+<h1 id="title">Survey Form</h1>
+<p id="description"> Please fill out this form for our student census.</p>
+<form method="post" id="survey-form">
+
+
+<!--Name-->
+<label id="name-label"for="name" >Provide your full name: 
+  <input required id="name" type="text" placeholder="John Doe"/></label>
+
+
+<!--Email-->
+<label id="email-label"for="email">Provide your student email: <input required id="email" type="email" placeholder="johndoe@gmail.com"/> </label>
+
+<!-- Number -->
+<label id="number-label"for="number">Enter your student ID number: <input required id="number" type="number" min="0" max="999999" placeholder="123456789"/></label>
+</fieldset>
+
+
+
+<fieldset>
+
+<!-- Selecting year of college experience --> 
+
+<label for="">What year of college are you currently in?
+<select id="dropdown">
+  <option value="">--select one--</option>
+  <option value="1" >Freshman</option>
+  <option value="2" >Sophomore</option>
+  <option value="3" >Junior</option>
+  <option value="4" >Senior</option>
+  <option value="5" >Other</option>
+</select>
+</label>
+
+<!-- Text area -->
+<label for= "student feedback">What courses are you taking?<textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="Ex: CS 311, HIST 130, CS 310"></textarea>
+
+<!--For continuity, asking more information -->
+<label for="graduation">What's your expected graduation date?<textarea id="graduation" name="graduation" rows="2" cols="30" placeholder="Spring 2026"></textarea>
+
+<!-- Radio Buttons-->
+
+<fieldset> 
+  <!--label-->
+<legend>Field of current major:</legend>
+<!-- buttons -->
+
+<!-- STEM -->
+<label for="STEM"><input id="STEM" type="radio" value="STEM" name="major"/>Science, Engineering or Math</label>
+
+<!--Business-->
+<label for="business"><input id="business" type="radio" value="business" name="major"/>Business</label>
+
+
+
+<!--Arts-->
+<label for="arts"><input id="arts" type="radio"value="arts" name="major"/>Arts</label>
+
+<!--Other: textfield-->
+<label for="other">Other: <input id="other"></label>
+  </fieldset>
+</label>
+
+<!-- End of user's input -->
+  </fieldset>
+
+
+<label>Select your income bracket after taxes: </label>
+
+<label><input id ="" type="checkbox" class="check" value="0">$0-$10,00</label>
+
+<label><input id ="" type="checkbox" class="check" value="1">$10,000-20,000</label>
+
+<label><input id ="" type="checkbox" class="check" value="2">$20,000-$30,000</label>
+
+<label><input id ="" type="checkbox" class="check" value="3">$30,000-$40,000</label>
+
+<label><input id ="" type="checkbox" class="check" value="4">$40,000+</label>
+
+
+
+
+
+
+
+
+
+<!-- Submit button -->
+<input type="submit" value="Submit" id="submit" />
+
+
+
+<!-- Closing tags -->
+</form>
+</body>
+</html>
