@@ -1,0 +1,39 @@
+h1,p{
+/*Center text, add margins*/
+  text-align:center;
+  margin: 1em auto;
+}
+label{
+/*new line for each input*/
+  display:block;
+
+/*space between labels*/
+  margin-bottom: 15px;
+  text-align: center;
+
+}
+
+select{
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+ 
+}
+
+input[type="submit"]{
+  /*putting submit button further down from fieldset*/
+  margin: 2em auto;
+
+/*adjusting size and color*/
+width:60%;
+height: 2em;
+font-size: 1 rem;
+background-color: white;
+
+/*making label take up whole width*/
+  min-width: 320px;
+}
+
+textarea{
+  margin:1em auto;
+}
